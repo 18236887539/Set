@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Switch Default -->
+    <dimen name="switch_width">86dp</dimen>
+    <dimen name="switch_height">48dp</dimen>
+    <dimen name="switch_thumb_radius">10dp</dimen>
+    <dimen name="switch_ripple_max_radius">24dp</dimen>
+    <dimen name="switch_stroke_width">2dp</dimen>
+    <dimen name="switch_track_width">2dp</dimen>
+
+    <color name="switch_track_color">#4f4f4f</color>
+    <color name="switch_track_checked_color">#2d523e</color>
+    <color name="switch_thumb_color">#929292</color>
+    <color name="switch_thumb_checked_color">#289d4d</color>
+
+</resources>

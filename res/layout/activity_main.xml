@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:genius="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.zyh.testtouch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+    <com.zyh.testtouch.ZSwitchButton
+        android:id="@+id/sw"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:thumb="@drawable/switch_inner_holo_dark" />
+
+    <com.zyh.testtouch.OverScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sw"
+        android:background="#2222"
+        android:fastScrollEnabled="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.zyh.testtouch.GeniusButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="go"
+                android:text="Button"
+                genius:g_delayClick="true"
+                genius:g_touchEffect="move" />
+
+            <com.zyh.testtouch.GeniusButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="go"
+                android:text="Button"
+                genius:g_delayClick="true"
+                genius:g_touchEffect="ripple" />
+
+            <com.zyh.testtouch.GeniusButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="go"
+                android:text="Button"
+                genius:g_delayClick="true"
+                genius:g_touchEffect="ease" />
+
+            <com.zyh.testtouch.GeniusButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="go"
+                android:text="Button"
+                genius:g_delayClick="false"
+                genius:g_touchEffect="press" />
+
+            <com.zyh.testtouch.GeniusButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="go"
+                android:text="Button"
+                genius:g_delayClick="true"
+                genius:g_touchEffect="press" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Button" />
+        </LinearLayout>
+    </com.zyh.testtouch.OverScrollView>
+
+</RelativeLayout>
